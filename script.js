@@ -29,7 +29,7 @@ Promise.all(promises)
        results.forEach((time, index) => {
            const row = document.createElement('tr');
            row.innerHTML = `
-               <td>Promise - ${index + 1}</td>
+               <td>Promise ${index + 1}</td>
                <td>${time}</td>
            `;
            tbody.appendChild(row);
