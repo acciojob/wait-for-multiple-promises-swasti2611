@@ -16,8 +16,9 @@ let promise3 = new Promise((resolve, reject) => {
    }, Math.floor(Math.random() * 3000) + 1000); // Random time between 1 and 3 seconds
 });
 
+let promises=[promise1,promise2,promise3]
 // Use Promise.all to wait for all promises to resolve
-Promise.all([promise1, promise2, promise3])
+Promise.all([promises])
    .then((results) => {
        // Get the table body element
        const tbody = document.getElementById('output');
