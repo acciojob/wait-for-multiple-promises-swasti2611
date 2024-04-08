@@ -35,7 +35,10 @@ Promise.all([promise1, promise2, promise3])
        });
 
        // Calculate total time taken
-       const totalTime = results.reduce((total, time) => total + time, 0);
+      let totalTime = 0;
+        for (let i = 0; i < results.length; i++) {
+            totalTime += results[i];
+        }
 
        // Add total row
        const totalRow = document.createElement('tr');
