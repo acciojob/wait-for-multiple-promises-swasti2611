@@ -18,7 +18,7 @@ let promise3 = new Promise((resolve, reject) => {
 
 let promises=[promise1,promise2,promise3]
 // Use Promise.all to wait for all promises to resolve
-Promise.all([promises])
+Promise.all(promises)
    .then((results) => {
        // Get the table body element
        const tbody = document.getElementById('output');
